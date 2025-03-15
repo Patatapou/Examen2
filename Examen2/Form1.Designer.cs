@@ -41,58 +41,75 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = SystemColors.GradientInactiveCaption;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(999, 28);
+            menuStrip1.Size = new Size(853, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // opcionesToolStripMenuItem
             // 
+            opcionesToolStripMenuItem.BackColor = SystemColors.GradientActiveCaption;
             opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { usuariosToolStripMenuItem, salirToolStripMenuItem });
             opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             opcionesToolStripMenuItem.Size = new Size(85, 24);
             opcionesToolStripMenuItem.Text = "Opciones";
+            opcionesToolStripMenuItem.Click += opcionesToolStripMenuItem_Click;
+            opcionesToolStripMenuItem.MouseHover += opcionesToolStripMenuItem_MouseHover;
             // 
             // usuariosToolStripMenuItem
             // 
+            usuariosToolStripMenuItem.BackColor = SystemColors.GradientActiveCaption;
             usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { altaToolStripMenuItem1, cerrarTablaToolStripMenuItem1 });
             usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(148, 26);
+            usuariosToolStripMenuItem.Size = new Size(224, 26);
             usuariosToolStripMenuItem.Text = "Usuarios";
             usuariosToolStripMenuItem.Click += usuariosToolStripMenuItem_Click;
+            usuariosToolStripMenuItem.MouseHover += usuariosToolStripMenuItem_MouseHover;
             // 
             // altaToolStripMenuItem1
             // 
+            altaToolStripMenuItem1.BackColor = SystemColors.ControlLight;
             altaToolStripMenuItem1.Name = "altaToolStripMenuItem1";
-            altaToolStripMenuItem1.Size = new Size(171, 26);
+            altaToolStripMenuItem1.Size = new Size(224, 26);
             altaToolStripMenuItem1.Text = "Alta";
             altaToolStripMenuItem1.Click += altaToolStripMenuItem1_Click;
             // 
             // cerrarTablaToolStripMenuItem1
             // 
+            cerrarTablaToolStripMenuItem1.BackColor = SystemColors.ControlLight;
             cerrarTablaToolStripMenuItem1.Name = "cerrarTablaToolStripMenuItem1";
-            cerrarTablaToolStripMenuItem1.Size = new Size(171, 26);
+            cerrarTablaToolStripMenuItem1.Size = new Size(224, 26);
             cerrarTablaToolStripMenuItem1.Text = "Cerrar Tabla";
             cerrarTablaToolStripMenuItem1.Click += cerrarTablaToolStripMenuItem1_Click;
             // 
             // salirToolStripMenuItem
             // 
+            salirToolStripMenuItem.BackColor = SystemColors.GradientActiveCaption;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(148, 26);
+            salirToolStripMenuItem.Size = new Size(224, 26);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // dgv
             // 
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToOrderColumns = true;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dgv.BorderStyle = BorderStyle.Fixed3D;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv.Dock = DockStyle.Fill;
             dgv.Location = new Point(0, 28);
             dgv.Name = "dgv";
+            dgv.ReadOnly = true;
             dgv.RowHeadersWidth = 51;
-            dgv.Size = new Size(999, 422);
+            dgv.Size = new Size(853, 422);
+            dgv.StandardTab = true;
             dgv.TabIndex = 1;
             dgv.CellContentDoubleClick += dgv_CellContentDoubleClick;
             // 
@@ -100,16 +117,18 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            AutoSize = true;
+            BackColor = Color.White;
             BackgroundImage = Properties.Resources.database_icon;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(999, 450);
+            ClientSize = new Size(853, 450);
             Controls.Add(dgv);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
             Activated += Form1_Activated;
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv).EndInit();

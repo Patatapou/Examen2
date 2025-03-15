@@ -47,6 +47,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Location = new Point(436, 15);
             button1.Name = "button1";
             button1.Size = new Size(118, 29);
@@ -58,14 +59,16 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.Location = new Point(16, 226);
             label5.Name = "label5";
-            label5.Size = new Size(135, 20);
+            label5.Size = new Size(141, 20);
             label5.TabIndex = 21;
             label5.Text = "Correo electronico:";
             // 
             // CORREO
             // 
+            CORREO.Cursor = Cursors.IBeam;
             CORREO.Location = new Point(157, 219);
             CORREO.Name = "CORREO";
             CORREO.Size = new Size(401, 27);
@@ -73,6 +76,7 @@
             // 
             // TEL
             // 
+            TEL.Cursor = Cursors.IBeam;
             TEL.Location = new Point(93, 269);
             TEL.Mask = "(999)000-0000";
             TEL.Name = "TEL";
@@ -82,23 +86,26 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.Location = new Point(17, 276);
             label4.Name = "label4";
-            label4.Size = new Size(70, 20);
+            label4.Size = new Size(74, 20);
             label4.TabIndex = 18;
             label4.Text = "Telefono:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(12, 175);
             label3.Name = "label3";
-            label3.Size = new Size(129, 20);
+            label3.Size = new Size(135, 20);
             label3.TabIndex = 17;
             label3.Text = "Apellido materno:";
             // 
             // AM
             // 
+            AM.Cursor = Cursors.IBeam;
             AM.Location = new Point(147, 168);
             AM.Name = "AM";
             AM.Size = new Size(407, 27);
@@ -107,14 +114,16 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(16, 124);
             label2.Name = "label2";
-            label2.Size = new Size(125, 20);
+            label2.Size = new Size(130, 20);
             label2.TabIndex = 15;
             label2.Text = "Apellido paterno:";
             // 
             // AP
             // 
+            AP.Cursor = Cursors.IBeam;
             AP.Location = new Point(147, 117);
             AP.Name = "AP";
             AP.Size = new Size(407, 27);
@@ -123,14 +132,16 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(16, 75);
             label1.Name = "label1";
-            label1.Size = new Size(67, 20);
+            label1.Size = new Size(71, 20);
             label1.TabIndex = 13;
             label1.Text = "Nombre:";
             // 
             // NOM
             // 
+            NOM.Cursor = Cursors.IBeam;
             NOM.Location = new Point(89, 68);
             NOM.Name = "NOM";
             NOM.Size = new Size(465, 27);
@@ -139,9 +150,10 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label6.Location = new Point(14, 15);
             label6.Name = "label6";
-            label6.Size = new Size(27, 20);
+            label6.Size = new Size(29, 20);
             label6.TabIndex = 24;
             label6.Text = "ID:";
             // 
@@ -170,6 +182,7 @@
             // 
             // button3
             // 
+            button3.Cursor = Cursors.Hand;
             button3.Location = new Point(436, 272);
             button3.Name = "button3";
             button3.Size = new Size(118, 29);
@@ -182,7 +195,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(580, 333);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label6);

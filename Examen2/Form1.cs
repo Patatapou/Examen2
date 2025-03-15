@@ -24,6 +24,7 @@ namespace Examen2
             {
                 dgv.DataSource = ds.Tables[0];
             }
+
         }
 
         private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -62,6 +63,26 @@ namespace Examen2
                 dgv[5, e.RowIndex].Value.ToString()
                 );
             cambios.Show();
+        }
+
+        private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuariosToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            usuariosToolStripMenuItem.ShowDropDown();
+        }
+
+        private void opcionesToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            opcionesToolStripMenuItem.ShowDropDown();
         }
     }
 }

@@ -3,9 +3,9 @@ using System.Data;
 
 namespace Examen2
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
             dgv.Visible = false;
